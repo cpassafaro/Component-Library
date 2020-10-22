@@ -1,0 +1,75 @@
+/* Button.css */
+
+button {
+    border-radius: 2px;
+    padding: 5px 25px;
+}
+
+.button-primary {
+    background-color: #0069D9;
+    color: white;
+    border: #0069D9;
+}
+
+.button-primary:hover {
+    background-color: rgb(3, 3, 87);
+    color: white;
+    border: rgb(3, 3, 87);
+}
+
+
+.button-success {
+    background-color: green;
+    color: white;
+    border-radius: 2px;
+    padding: 5px 25px;
+    border: green;
+    height: 20vh;
+    width: 40vw;
+    font-size: 50px;
+}
+
+.button-success:hover {
+    background-color: rgb(3, 57, 3);
+    color: white;
+    border-radius: 2px;
+    padding: 5px 25px;
+    border: rgb(3, 57, 3);
+    height: 20vh;
+    width: 40vw;
+    font-size: 50px;
+}
+
+
+.button-danger {
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+    padding: 5px 25px;
+    border: #0069D9;
+    height:20vh;
+    width: 40vw;
+    font-size: 50px;
+}
+
+.button-danger-outline {
+    background-color: red;
+    color: white;
+    border: 2px solid blue;
+    /* border-radius: 2px; */
+    /* padding: 5px 25px; */
+    height:20vh;
+    width: 40vw;
+    font-size: 50px;
+}
+
+.button-warning{
+    background-color: #FFB90C;
+    color: black;
+    border-radius: 2px;
+    padding: 5px 25px;
+    border: #FFB90C;
+    height:20vh;
+    width: 40vw;
+    font-size: 50px;
+}
