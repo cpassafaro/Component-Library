@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
+
+
 /* Button.css */
 button {
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 12px 25px;
+    font-family: 'Heebo', sans-serif;
 }
 
 .button-primary {
@@ -18,7 +22,7 @@ button {
 
 .button-primary-outline {
     background-color: white;
-    border: 5px solid #33A0FF;
+    border: 2px solid #33A0FF;
     color:#33A0FF;
 }
 
@@ -26,4 +30,175 @@ button {
     background-color: #EAF5FF;
     color: #85C6FF;
     border:none;
+}
+
+.button-primary-large{
+    height:80px;
+    width:200px;
+    font-size: 20px;
+}
+
+.button-danger{
+    background-color: #FF4858;
+    color: white;
+    border:none;
+}
+
+.button-danger:hover{
+    background-color: #F53848;
+    color: white;
+    border:none;
+}
+
+.button-danger-outline {
+    background-color: white;
+    border: 2px solid #FF4858;
+    color:#FF4858;
+}
+
+.button-danger-faded{
+    background-color: #FFECEE;
+    color: #FF5A68;
+    border:none;
+}
+
+.button-danger-large{
+    height:80px;
+    width:200px;
+    font-size: 20px;
+}
+
+.button-success{
+    background-color: #0AD00A;
+    color: white;
+    border:none;
+}
+
+.button-success:hover{
+    background-color: #07C107;
+    color: white;
+    border:none;
+}
+
+.button-success-outline {
+    background-color: white;
+    border: 2px solid #0AD00A;
+    color:#0AD00A;
+}
+
+.button-success-faded{
+    background-color: #E6FAE6;
+    color: #2DD72D;
+    border:none;
+}
+
+.button-success-large{
+    height:80px;
+    width:200px;
+    font-size: 20px;
+}
+
+.button-warning{
+    background-color: #FFC600;
+    color: white;
+    border:none;
+}
+
+.button-warning:hover{
+    background-color: #EBB600;
+    color: white;
+    border:none;
+}
+
+.button-warning-outline {
+    background-color: white;
+    border: 2px solid #FFC600;
+    color:#FFC600;
+}
+
+.button-warning-faded{
+    background-color: #FFF9E5;
+    color: #FFC600;
+    border:none;
+}
+
+.button-warning-large{
+    height:80px;
+    width:200px;
+    font-size: 20px;
+}
+
+.button-default{
+    background-color: #22262A;
+    color: white;
+    border:none;
+}
+
+.button-default:hover{
+    background-color: #EBB600;
+    color:#13161A;
+    border:none;
+}
+
+.button-default-outline {
+    background-color: white;
+    border: 2px solid #22262A;
+    color:#22262A;
+}
+
+.button-default-faded{
+    background-color: #F6F7F8;
+    color: #22262A;
+    border:none;
+}
+
+.button-default-large{
+    height:80px;
+    width:200px;
+    font-size: 20px;
+}
+
+.button-heart{
+    background-color:#EAF5FF;
+    border:none;
+    width: 20px;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    padding-right:16px;
+}
+
+.button-cart{
+    background-color:#EAF5FF;
+    border:none;
+    width: 20px;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-right:16px;
+}
+
+.button-cart-fav{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border:none;
+    background-color:#EAF5FF;
+    width:auto;
+    color:#33A0FF;
+}
+
+.button-heart-fav{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border:none;
+    background-color:#EAF5FF;
+    width:auto;
+    color:#33A0FF;
+}
+
+.image2{
+    padding-right:10px;
 }

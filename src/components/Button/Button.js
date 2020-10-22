@@ -5,22 +5,33 @@ import './Button.css'
 const Button = (props) => {
     let classList = '';
 
-    let types = ['primary', 'danger', 'success', 'warning']
+    let types = ['primary', 'danger', 'success', 'warning', 'default', 'heart', 'cart']
 
     if(types.includes(props.type)){
         classList+= `button-${props.type}`
     }
-    console.log(props.large)
+
     if(props.large){
-        classList+= ` button-large`
+        classList+= ` button-${props.type}-large`
     }
 
     if(props.outline){
-        classList = ` button-${props.type}-outline`
+        classList += ` button-${props.type}-outline`
     }
+
+    if(props.faded){
+        classList += ` button-${props.type}-faded`
+    }
+
+    if(props.fav){
+        classList += ` button-${props.type}-fav`
+    }
+
   
   return(
     <button className={classList}>
+        <img src= {props.image}/>
+        <img src= {props.image2} className='image2'/>
         {props.label}
     </button>
   )
