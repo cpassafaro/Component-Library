@@ -80,6 +80,8 @@
 
 .modal-faded{
         display:flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         top: 60px;
         left: 80px;
@@ -112,4 +114,10 @@
     justify-content: center;
     align-items: flex-start;
     padding-left: 15px;
+}
+
+
+/*hot take css*/
+.hot{
+    
 }

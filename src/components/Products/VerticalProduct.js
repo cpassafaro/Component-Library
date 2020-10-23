@@ -4,7 +4,8 @@ import Stars from '../Images/stars.png'
 import Cart from '../Images/circlecart.png';
 import Heart from '../Images/circleheart.png';
 import FilledHeart from '../Images/filledheart.png';
-import FilledCart from '../Images/filledcart.png'
+import FilledCart from '../Images/filledcart.png';
+import Beats from '../Images/beats.png'
 import './Products.css'
 
 class VerticalProduct extends Component{
@@ -18,7 +19,9 @@ class VerticalProduct extends Component{
           heart: Heart,
           cart: Cart,
           bottomContainer: 'bottom-container',
-          line: 'line'
+          line: 'line',
+          mac: Mac,
+          description: props.description,
         }
     } 
     componentDidMount(){
@@ -29,12 +32,16 @@ class VerticalProduct extends Component{
             this.setState({classListContainer: 'faded', heart: FilledHeart, cart:FilledCart})
         }
         if(this.props.horizontal){
-            console.log(this.state.classListContainer)
             this.setState({bottomContainer: 'row-bottom', classListContainer:'horizontal', line:''})
         }
         if(this.props.horizontal && this.props.faded){
             this.setState({bottomContainer: 'row-bottom', classListContainer:'horizontal-faded', line:''})
-
+        }
+        if(this.props.beats){
+            this.setState({bottomContainer: 'row-bottom', classListContainer:'horizontal-faded', line:'', mac:Beats})
+        }
+        if(this.props.hot){
+            this.setState({classListContainer:'hot', })
         }
     }
 
@@ -57,7 +64,7 @@ class VerticalProduct extends Component{
                 }} onMouseLeave={(e)=>{
                     this.onExit(e)
                 }}>
-                <img src={Mac} className={this.state.classListImage}/>
+                <img src={this.state.mac} className={this.state.classListImage}/>
                 <div className={this.state.classListModal}>
                     <img src={this.state.cart} className='cart'/>
                     <img src={this.state.heart} className='heart'/>
@@ -71,6 +78,7 @@ class VerticalProduct extends Component{
                     <p className='cost'>{this.props.cost}</p>
                     <p className='cost1'>{this.props.cost2}</p>
                 </div>
+                <p>{this.state.description}</p>
             </div>
         </div>
         )
