@@ -3,7 +3,8 @@ import { storiesOf } from '@storybook/react';
 import Forms from './Forms';
 import Counter from './Counter';
 import Dropdown from './Dropdown';
-import Voucher from './Voucher'
+import Voucher from './Voucher';
+import Checkbox from './Checkbox';
 
 
 storiesOf('Forms', module)
@@ -26,5 +27,12 @@ storiesOf('Counter', module)
 storiesOf('Voucher', module)
     //Voucher button
     .add('Voucher', () => <Voucher large placeholder='Voucher code' label='Redeem' onClick={(arg)=>{console.log(arg)}}/>)
+    .add('Voucher Small', () => <Voucher small placeholder='Voucher code' label='Redeem' onClick={(arg)=>{console.log(arg)}}/>)
+
+storiesOf('Checkbox', module)
+    .add('Checkbox', ()=> <Checkbox type='checkbox'/>)
+    .add('Checkbox Dark', ()=> <Checkbox type='dark'/>)
+    .add('Checkbox Dark With Words', ()=> <Checkbox type='dark' label={`Don't show this pop up again`}/>)
+
 
 

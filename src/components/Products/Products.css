@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Heebo', sans-serif;
+    width: 240px;
+    border:1px solid #F6F7F8;
+}
+
+.bottom-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mac{
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.mac-modal{
+    opacity: 0.1;
+}
+
+.modal{
+    display:none;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    z-index: 1000;
+    padding-left:5px;
+}
+.modal-display{
+    display:flex;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    z-index: 1000;
+    padding-left:5px;
+}
+
+.cart{
+    padding-right:5px;
+}
+
+.line{
+    border-bottom: 1px solid #E5E8EA;
+    width:200px;
+}
+
+.cost-holder{
+    display:flex;
+}
+
+.cost{
+    color:red;
+}
+
+.cost1{
+    padding-left:7px;
+    text-decoration: line-through;
+    color:gray;
+}
+
+
+/*faded component*/
+.faded{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Heebo', sans-serif;
+    width: 240px;
+    border:1px solid #F6F7F8;
+}
+
+.modal-faded{
+        display:flex;
+        position: absolute;
+        top: 60px;
+        left: 80px;
+        z-index: 1000;
+        padding-left:5px;
+}

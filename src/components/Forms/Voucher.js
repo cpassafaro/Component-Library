@@ -46,8 +46,8 @@ class Voucher extends Component {
     render (){
         console.log(this.state.classListOuter)
         return(<form className={this.state.classListOuter} onClick={(e)=>{e.preventDefault()}}> 
-            <input placeholder={this.state.placeholder} onChange={this.getInput}/>
-            <button onClick={()=>{this.props.onClick(this.state.input)}}>{this.state.label}</button>
+            <input className={this.state.classListOuter, 'inner'}placeholder={this.state.placeholder} onChange={this.getInput}/>
+            <button className={this.state.classListOuter, 'button'} onClick={()=>{this.props.onClick(this.state.input)}}>{this.state.label}</button>
         </form>
       )}
 }
