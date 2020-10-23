@@ -17,9 +17,9 @@ class VerticalProduct extends Component{
           classListContainer: 'container',
           heart: Heart,
           cart: Cart,
-
+          bottomContainer: 'bottom-container',
+          line: 'line'
         }
-        // this.getClassList()
     } 
     componentDidMount(){
         this.getClassList()
@@ -27,13 +27,19 @@ class VerticalProduct extends Component{
     getClassList=()=>{
         if(this.props.faded){
             this.setState({classListContainer: 'faded', heart: FilledHeart, cart:FilledCart})
+        }
+        if(this.props.horizontal){
+            console.log(this.state.classListContainer)
+            this.setState({bottomContainer: 'row-bottom', classListContainer:'horizontal', line:''})
+        }
+        if(this.props.horizontal && this.props.faded){
+            this.setState({bottomContainer: 'row-bottom', classListContainer:'horizontal-faded', line:''})
 
         }
     }
 
     onHover = (e)=>{
         if(this.props.faded){
-            console.log('faded')
             this.setState({classListImage: 'mac-modal', classListModal:'modal-faded'})
         }else{
             this.setState({classListImage: 'mac-modal', classListModal:'modal-display'})
@@ -45,7 +51,6 @@ class VerticalProduct extends Component{
     }
 
     render(){
-        console.log(this.state.classListContainer)
         return(<div className={this.state.classListContainer}> 
             <div onMouseEnter={(e)=>{
                 this.onHover(e)
@@ -58,8 +63,8 @@ class VerticalProduct extends Component{
                     <img src={this.state.heart} className='heart'/>
                 </div>
             </div>
-            <div className='bottom-container'>
-                <div className='line'></div>
+            <div className={this.state.bottomContainer}>
+                <div className={this.state.line}></div>
                 <p className='product'>{this.props.product}</p>
                 <img src={Stars}/>
                 <div className='cost-holder'>

@@ -75,6 +75,7 @@
     font-family: 'Heebo', sans-serif;
     width: 240px;
     border:1px solid #F6F7F8;
+    background-color: #FAFAFB;
 }
 
 .modal-faded{
@@ -84,4 +85,31 @@
         left: 80px;
         z-index: 1000;
         padding-left:5px;
+}
+
+/*horizontal css*/
+
+.horizontal{
+    display:flex;
+    flex-direction: row;
+    font-family: 'Heebo', sans-serif;
+    width: 440px;
+    border:1px solid #F6F7F8;
+}
+
+.horizontal-faded{
+    display:flex;
+    flex-direction: row;
+    font-family: 'Heebo', sans-serif;
+    width: 440px;
+    border:1px solid #F6F7F8;
+    background-color: #FAFAFB;
+}
+
+.row-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 15px;
 }
