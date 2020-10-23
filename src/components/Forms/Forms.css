@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
+
+
+.input{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Heebo', sans-serif;
+    font-size:13px;
+    width:35vw;
+    padding:7px;
+}
+
+.medium{    
+    font-size:11px;
+    width:28vw;
+    padding:5px;
+}
+
+.small{
+    font-size:9px;
+    width:25vw;
+    padding:4px;
+}
+
+.faded{
+    background-color: #FAFAFB;
+    border: none;
+}
