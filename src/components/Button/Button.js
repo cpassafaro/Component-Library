@@ -29,7 +29,7 @@ const Button = (props) => {
 
   
   return(
-    <button className={classList}>
+    <button className={classList} onClick={()=>{props.onClick(props.label)}}>
         <img src= {props.image}/>
         <img src= {props.image2} className='image2'/>
         {props.label}

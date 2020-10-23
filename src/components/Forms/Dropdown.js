@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import Selectors from './Selectors'
 import './Forms.css'
 
 

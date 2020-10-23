@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@500&display=swap');
 
+/*Email css*/
+.interior{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Heebo', sans-serif;
+    padding-left: 6px;
+    border: 1px solid #F1F3F4;
+    font-size:12px;
+}
 
+.input-input{
+    font-family: 'Heebo', sans-serif;
+    font-size:12px;
+
+}
+/* dropdown menu css*/
 .input{
     display:flex;
     flex-direction: column;
@@ -25,4 +41,34 @@
 .faded{
     background-color: #FAFAFB;
     border: none;
+}
+
+/* counter css*/
+.counter{
+    display:flex;
+    flex-direction: row;
+    background-color: #F6F7F8;
+    width: 20vw;
+}
+
+.inc-dec{
+    border:none;
+    background-color: #F6F7F8;
+    color:#3499F1;
+    font-size: 17px;
+    font-family: 'Commissioner', sans-serif;
+    width:10px;
+}
+/*buttons wont outline when clicked*/
+.inc-dec:focus{
+    outline:none;
+}
+
+/*voucher css*/
+
+.voucher{
+    height:40vh;
+    background-color: blue;
+
+
 }

@@ -7,7 +7,7 @@ import Button from './Button';
 
 storiesOf('Button', module)
     //primary buttons
-    .add('Primary', () => <Button label="Do something" type='primary'/>)
+    .add('Primary', () => <Button label="Do something" type='primary' onClick={(arg)=>{alert(arg)}}/>)
     .add('Primary Outline', () => <Button label="Do something" type='primary' outline/>)
     .add('Primary Faded', () => <Button label='Do something' type='primary' faded/>)
     .add('Primary Large', () => <Button label="Do something" type='primary' large/>)
