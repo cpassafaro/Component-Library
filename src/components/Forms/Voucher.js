@@ -32,11 +32,11 @@ class Voucher extends Component {
         let types = ['large', 'small',]
     
         if(this.props.large){
-            classList += ` large`
+            classList += `-large`
         }
 
         if(this.props.small){
-            classList+= ` small`
+            classList+= `-small`
         }
         console.log(classList)
         // this.state.classListOuter = classList

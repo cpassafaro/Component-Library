@@ -9,6 +9,13 @@
     border:1px solid #F6F7F8;
 }
 
+.container-modal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .bottom-container{
     display:flex;
     flex-direction: column;
@@ -24,23 +31,18 @@
 
 .mac-modal{
     opacity: 0.1;
+    
 }
 
 .modal{
     display:none;
     position: absolute;
-    top: 60px;
-    left: 80px;
     z-index: 1000;
-    padding-left:5px;
 }
 .modal-display{
     display:flex;
     position: absolute;
-    top: 60px;
-    left: 80px;
     z-index: 1000;
-    padding-left:5px;
 }
 
 .cart{
@@ -83,10 +85,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 60px;
-        left: 80px;
         z-index: 1000;
-        padding-left:5px;
 }
 
 /*horizontal css*/
@@ -97,6 +96,16 @@
     font-family: 'Heebo', sans-serif;
     width: 440px;
     border:1px solid #F6F7F8;
+}
+.horizontal-modal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* top: 20%; */
+    left: 15%;
+    z-index: 1000;
+    padding-left:5px;
 }
 
 .horizontal-faded{
@@ -116,8 +125,79 @@
     padding-left: 15px;
 }
 
+/*beats modal*/
+.beats-modal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+}
+
 
 /*hot take css*/
-.hot{
-    
+.HOT{
+    background-color: #FF4858;
+    height:20px;
+    width:40px;
+    color:white;
+    font-size: 12px;
+    padding:1px 4px 1px 4px;
+    border-radius: 2px;
+    margin-left:3px;
 }
+
+.description{
+    font-size:10px;
+}
+
+.container-modal-hot{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 156px;
+    width:236px;
+    margin-top: 6%;
+}
+
+.horizontal-hot{
+    display:flex;
+    flex-direction: row;
+    font-family: 'Heebo', sans-serif;
+    width: 600px;
+    border:1px solid #F6F7F8;
+}
+
+
+/*hot take css*/
+
+.reviews{
+    display:flex;
+    align-items: center;
+}
+/*display flex stretched out the starts*/
+.stars{
+    object-fit: contain;
+}
+
+.button-section{
+    display:flex;
+    justify-content: space-between;
+}
+
+/*put in a p to add space between the buttons*/
+.padding-div{
+    width:10px;
+}
+
+.zero-review{
+    color:#C1C8CE;
+    font-size: 8px;
+    padding: 0px 5px 0px 5px;
+}
+
+.submit-review{
+    color:#33A0FF;
+    font-size:9px;
+}
+

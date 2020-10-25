@@ -35,7 +35,7 @@ class Checkbox extends Component{
 
     render(){
         console.log(this.state.classList)
-        return(<div className='container'> 
+        return(<div className='container-for-checkbox'> 
             <div className={this.state.classList} onClick ={this.setClass}>
                 ✓
             </div>

@@ -47,8 +47,10 @@
 .counter{
     display:flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: #F6F7F8;
-    width: 20vw;
+    width: 12vw;
 }
 
 .inc-dec{
@@ -57,7 +59,7 @@
     color:#3499F1;
     font-size: 17px;
     font-family: 'Commissioner', sans-serif;
-    width:10px;
+    padding:15px;
 }
 /*buttons wont outline when clicked*/
 .inc-dec:focus{
@@ -66,14 +68,20 @@
 
 /*voucher css*/
 
-.voucher{
+.voucher-small{
     display:flex;
     border:none;
     border-radius: 10px;
 }
 
+.voucher-large{
+    display:flex;
+    border:none;
+    border-radius: 10px;
+    height:50px;
+}
+
 .inner{
-    height:13vh;
     padding-left:7px;
     border-top:1px solid #F1F3F4;
     border-left:1px solid #F1F3F4;
@@ -85,7 +93,6 @@
 .button{
     display:flex;
     align-items: center;
-    height:15vh;
     background-color: #33A0FF;
     border:none;
     border-radius: 0px 5px 5px 0px;
@@ -145,7 +152,7 @@
     font-size: 9px;
 }
 
-.container{
+.container-for-checkbox{
     display:flex;
     align-items: center;
 }
