@@ -1,27 +1,11 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+///Library created via storybook, react, js, css, html////
 
-# My First Component Library
+///Elements were designed in the mock-up from Adobe xd called bouncer.xd. Elements include: Variations of different styles of buttons, Input fields, Selector fields, clicked/checkboxes, products displays.
 
-We have provided the starter code for you. From here, you'll be creating your very first component library with Storybook!
+Elements are saved in the src/components folder. The button folder contains all the different variations of buttons that are created. 
 
-## Prerequisites
+Forms folder contains the input fields, selector dropdown menu, voucher input field, and checkbox fields. Their are multiple js files for this folder that contribute to the storybook input fields.
 
-- Intro to React & React Components
-- Storybook
+Product section contains different variations of product displays for the macbook and beats headphones. These product displays contain interactive elements that react on mouseover. Some incorporate button elements created in the button folder. ////
 
-## Instructions
-
-1.  Fork and clone this repository.
-1.  Change into the new directory.
-1.  Install dependencies.
-1.  Fulfill the listed requirements.
-
-## Requirements
-
-Follow along as we create a new component library with different styles of buttons.
-
-## [License](LICENSE)
-
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+//Images used in this project are from the adobe mockup and are saved in a folder in the repo to access.
