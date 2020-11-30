@@ -4,6 +4,10 @@ This storybook library was created via storybook in conjucation with the javascr
 ## Deployed URL
 https://cpassafaro.github.io/Component-Library/storybook-build/?path=/story/button--primary
 
+## Sample
+***
+![Home Page](src/components/Images/sample.png)
+
 
 ## Mockup Used
 
